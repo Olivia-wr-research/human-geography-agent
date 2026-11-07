@@ -17,6 +17,12 @@ try:
     assert len(reopened.mapLayers()) == 2
     assert all(layer.isValid() for layer in reopened.mapLayers().values())
     assert len(reopened.layoutManager().layouts()) == 1
+    page = reopened.layoutManager().layouts()[0].pageCollection().pages()[0]
+    assert round(page.pageSize().width()) == 210
+    assert round(page.pageSize().height()) == 297
+    from qgis.PyQt.QtGui import QImage
+    image = QImage(str(root/'export/synthetic_od.png'))
+    assert not image.isNull() and image.height() > image.width()
     for name in ('synthetic_od.png','synthetic_od.pdf'):
         assert (root/'export'/name).stat().st_size > 1000
     reopened.clear()

@@ -5,7 +5,7 @@ import json
 
 def run_demo(input_dir, output_dir):
     from qgis.core import (Qgis, QgsProject, QgsVectorLayer, QgsCoordinateReferenceSystem,
-        QgsPrintLayout, QgsLayoutItemMap, QgsLayoutItemLabel, QgsLayoutItemLegend,
+        QgsPrintLayout, QgsLayoutItemPage, QgsLayoutItemMap, QgsLayoutItemLabel, QgsLayoutItemLegend,
         QgsLayoutItemScaleBar, QgsLayoutPoint, QgsLayoutSize, QgsLayoutExporter,
         QgsMarkerSymbol, QgsLineSymbol, QgsProperty, QgsSymbolLayer, QgsUnitTypes)
     source, target = Path(input_dir).resolve(), Path(output_dir).resolve()
@@ -38,6 +38,7 @@ def run_demo(input_dir, output_dir):
     flows.renderer().setSymbol(line)
     layout = QgsPrintLayout(project)
     layout.initializeDefaults()
+    layout.pageCollection().pages()[0].setPageSize('A4', QgsLayoutItemPage.Portrait)
     layout.setName('Synthetic OD example')
     project.layoutManager().addLayout(layout)
     map_item = QgsLayoutItemMap(layout)
