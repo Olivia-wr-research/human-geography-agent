@@ -1,5 +1,7 @@
 # Human Geography Research Agent
 
+[![Toolkit checks](https://github.com/Olivia-wr-research/human-geography-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/Olivia-wr-research/human-geography-agent/actions/workflows/tests.yml)
+
 面向人文地理研究的证据驱动 Agent 工作流：从研究问题到可复现分析、QGIS 制图与论文写作。
 
 **状态：开发预览。** 这是供编码 Agent 使用的技能包、阶段契约和 Python 工具，不是自动生成可信论文的服务。实际研究需要研究者判断。仓库仅包含虚构演示数据；不包含真实论文正文、样本、个人信息或既有项目代码。工作流提炼自目的地选择与共同作者复现两条英文研究路径；公开包不复现原论文数值，也不披露私有研究记录。
@@ -45,6 +47,12 @@ flowchart TD
 | 写作、证据和复现 | [写作流程](skills/human-geography-research/references/writing.md) |
 | 表单与证据台账 | [templates](templates/) |
 | 验证范围与限制 | [验证说明](docs/validation.md) |
+
+## 验证与演示
+
+基础 10 项测试及 QGIS 3.34.4（Ubuntu 24.04）的 PNG/PDF 导出、A4 纵向尺寸和项目重开测试已通过。参见 [验证记录](docs/validation.md)。QGIS 示例使用虚构数据，不是论文结果图。
+
+![QGIS 合成示例：仅演示制图流程](examples/qgis-preview.png)
 
 ## 实际执行边界
 

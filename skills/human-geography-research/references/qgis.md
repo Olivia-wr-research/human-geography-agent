@@ -16,7 +16,7 @@ namespace['run_demo'](repo / 'work/demo', repo / 'work/qgis-export')
 
 输出包括便携 `.qgz` 项目、两份合成 GeoJSON、300 DPI PNG、PDF 和导出清单。脚本使用独立项目对象，不清空正在编辑的桌面项目。随后打开输出的 `.qgz`，检查标注、图例、比例尺、裁切和 PDF 字体。`visual_review=PENDING` 只有在实际检查后才能更改。
 
-脚本面向 QGIS 3.x / PyQGIS API；本次交付未在 QGIS 环境实机运行，不能称为已验证的制图结果。不要对普通 Python 执行 `pip install qgis` 来假装获得完整 QGIS 环境。
+脚本面向 QGIS 3.x / PyQGIS API；已在 GitHub Actions 的 Ubuntu 24.04 / QGIS 3.34.4 环境完成合成数据的导出、纵向页面尺寸与项目重开验证。本机没有安装 QGIS；其他平台/版本与真实研究数据仍需实际测试。不要对普通 Python 执行 `pip install qgis` 来假装获得完整 QGIS 环境。
 
 演示只有虚构城市点和 OD 连接线；线条无箭头，不表达流向，空间距离也不是实测迁移距离。线宽表达权重，图注保留公式。跨日期变更线需专门切分；自流不画零长度线。真实分析应按下列流程另建项目。
 
