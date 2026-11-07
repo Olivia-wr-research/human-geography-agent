@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "crs": "EPSG:4326",
+  "point_count": 4,
+  "flow_count": 4,
+  "hashes": {
+    "cities.geojson": "41499a859119d82d1626d3f1f71c7b43058750ef190b45fc5445c793af40c668",
+    "flows.geojson": "21e96f161b9ea35dcfa71c27123d2822fd7cf96f73fb74a291431b60d9cda7ff"
+  },
+  "meaning": "Fictional coordinates and weights. Lines are connections, not travel routes."
+}

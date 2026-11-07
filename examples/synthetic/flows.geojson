@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "origin": "A",
+        "destination": "B",
+        "weight": 12,
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.0,
+            45.0
+          ],
+          [
+            12.0,
+            46.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "origin": "A",
+        "destination": "C",
+        "weight": 7,
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.0,
+            45.0
+          ],
+          [
+            14.0,
+            44.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "origin": "B",
+        "destination": "D",
+        "weight": 4,
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            12.0,
+            46.0
+          ],
+          [
+            11.0,
+            43.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "origin": "C",
+        "destination": "D",
+        "weight": 9,
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            14.0,
+            44.0
+          ],
+          [
+            11.0,
+            43.0
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "stages": [
+    {
+      "id": "question",
+      "name": "问题与机制",
+      "artifact": "brief.md",
+      "review": "review.md"
+    },
+    {
+      "id": "literature",
+      "name": "文献与贡献",
+      "artifact": "literature.csv",
+      "review": "review.md"
+    },
+    {
+      "id": "measurement",
+      "name": "数据与空间测量",
+      "artifact": "data_dictionary.csv",
+      "review": "review.md"
+    },
+    {
+      "id": "design",
+      "name": "研究设计",
+      "artifact": "design.md",
+      "review": "review.md"
+    },
+    {
+      "id": "analysis",
+      "name": "分析与诊断",
+      "artifact": "analysis.md",
+      "review": "review.md"
+    },
+    {
+      "id": "robustness",
+      "name": "稳健性",
+      "artifact": "robustness.csv",
+      "review": "review.md"
+    },
+    {
+      "id": "mapping",
+      "name": "地图与图表",
+      "artifact": "map_review.md",
+      "review": "review.md"
+    },
+    {
+      "id": "writing",
+      "name": "证据约束写作",
+      "artifact": "claims.csv",
+      "review": "review.md"
+    },
+    {
+      "id": "release",
+      "name": "复现与公开检查",
+      "artifact": "release_review.md",
+      "review": "review.md"
+    }
+  ]
+}
